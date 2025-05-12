@@ -12,9 +12,9 @@ namespace oyuncak_dukkani
         static int yonetici_sifre = 12345;
         private void button1_Click(object sender, EventArgs e)
         {
-            if(radioButton1.Checked==true)
+            if (radioButton1.Checked == true)
             {
-                if (textBox1.Text=="musteri"&&Convert.ToInt32(textBox2.Text)==12345)
+                if (textBox1.Text == "musteri" && Convert.ToInt32(textBox2.Text) == 12345)
                 {
                     form2 musteri = new form2();
                     musteri.Show();
@@ -24,7 +24,7 @@ namespace oyuncak_dukkani
                     MessageBox.Show("þifre veya kullanýcý adý yanlýþ");
                 }
             }
-            else if(radioButton2.Checked==true)
+            else if (radioButton2.Checked == true)
             {
                 if (textBox1.Text == "yonetici" && Convert.ToInt32(textBox2.Text) == 12345)
                 {
@@ -35,6 +35,12 @@ namespace oyuncak_dukkani
                     MessageBox.Show("þifre veya kullanýcý adý yanlýþ");
                 }
             }
+        }
+
+        private void btn_geliþtirici_Click(object sender, EventArgs e)
+        {
+            form2 geliþtirici = new form2();
+            geliþtirici.Show();
         }
     }
 }

@@ -73,20 +73,20 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
+            oyuncak1_lbl = new Label();
+            oyuncak2_lbl = new Label();
+            oyuncak3_lbl = new Label();
+            oyuncak4_lbl = new Label();
+            oyuncak5_lbl = new Label();
+            oyuncak6_lbl = new Label();
+            oyuncak7_lbl = new Label();
+            oyuncak8_lbl = new Label();
+            oyuncak9_lbl = new Label();
+            oyuncak10_lbl = new Label();
+            oyuncak11_lbl = new Label();
+            oyuncak12_lbl = new Label();
+            oyuncak13_lbl = new Label();
+            oyuncak14_lbl = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -252,6 +252,7 @@
             button1.TabIndex = 14;
             button1.Text = "sepete ekle";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -262,6 +263,7 @@
             button2.TabIndex = 15;
             button2.Text = "sepete ekle";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -272,6 +274,7 @@
             button3.TabIndex = 16;
             button3.Text = "sepete ekle";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -282,6 +285,7 @@
             button4.TabIndex = 17;
             button4.Text = "sepete ekle";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -303,6 +307,7 @@
             button6.TabIndex = 19;
             button6.Text = "sepete ekle";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -313,6 +318,7 @@
             button7.TabIndex = 20;
             button7.Text = "sepete ekle";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -323,6 +329,7 @@
             button8.TabIndex = 21;
             button8.Text = "sepete ekle";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -333,6 +340,7 @@
             button9.TabIndex = 22;
             button9.Text = "sepete ekle";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -343,6 +351,7 @@
             button10.TabIndex = 23;
             button10.Text = "sepete ekle";
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -353,6 +362,7 @@
             button11.TabIndex = 24;
             button11.Text = "sepete ekle";
             button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
@@ -363,6 +373,7 @@
             button12.TabIndex = 25;
             button12.Text = "sepete ekle";
             button12.UseVisualStyleBackColor = false;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -373,6 +384,7 @@
             button13.TabIndex = 26;
             button13.Text = "sepete ekle";
             button13.UseVisualStyleBackColor = false;
+            button13.Click += button13_Click;
             // 
             // button14
             // 
@@ -383,6 +395,7 @@
             button14.TabIndex = 27;
             button14.Text = "sepete ekle";
             button14.UseVisualStyleBackColor = false;
+            button14.Click += button14_Click;
             // 
             // btn_tamamla
             // 
@@ -396,11 +409,11 @@
             // 
             // checkedListBox1
             // 
-            checkedListBox1.BackColor = Color.PaleTurquoise;
+            checkedListBox1.BackColor = Color.Honeydew;
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Location = new Point(1297, 98);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(150, 444);
+            checkedListBox1.Size = new Size(203, 444);
             checkedListBox1.TabIndex = 29;
             // 
             // btn_delete
@@ -412,6 +425,7 @@
             btn_delete.TabIndex = 30;
             btn_delete.Text = "seçilenleri sil";
             btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.Click += btn_delete_Click;
             // 
             // label1
             // 
@@ -553,131 +567,134 @@
             label14.TabIndex = 44;
             label14.Text = "label14";
             // 
-            // label15
+            // oyuncak1_lbl
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(156, 75);
-            label15.Name = "label15";
-            label15.Size = new Size(58, 20);
-            label15.TabIndex = 45;
-            label15.Text = "label15";
+            oyuncak1_lbl.AutoSize = true;
+            oyuncak1_lbl.Location = new Point(135, 75);
+            oyuncak1_lbl.Name = "oyuncak1_lbl";
+            oyuncak1_lbl.Size = new Size(110, 20);
+            oyuncak1_lbl.TabIndex = 45;
+            oyuncak1_lbl.Text = "akıl oyunu lego";
             // 
-            // label16
+            // oyuncak2_lbl
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(332, 75);
-            label16.Name = "label16";
-            label16.Size = new Size(58, 20);
-            label16.TabIndex = 46;
-            label16.Text = "label16";
+            oyuncak2_lbl.AutoSize = true;
+            oyuncak2_lbl.Location = new Point(301, 75);
+            oyuncak2_lbl.Name = "oyuncak2_lbl";
+            oyuncak2_lbl.Size = new Size(92, 20);
+            oyuncak2_lbl.TabIndex = 46;
+            oyuncak2_lbl.Text = "dansçı robot";
             // 
-            // label17
+            // oyuncak3_lbl
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(505, 75);
-            label17.Name = "label17";
-            label17.Size = new Size(58, 20);
-            label17.TabIndex = 47;
-            label17.Text = "label17";
+            oyuncak3_lbl.AutoSize = true;
+            oyuncak3_lbl.Location = new Point(474, 75);
+            oyuncak3_lbl.Name = "oyuncak3_lbl";
+            oyuncak3_lbl.Size = new Size(89, 20);
+            oyuncak3_lbl.TabIndex = 47;
+            oyuncak3_lbl.Text = "eğitici peluş";
             // 
-            // label18
+            // oyuncak4_lbl
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(657, 75);
-            label18.Name = "label18";
-            label18.Size = new Size(58, 20);
-            label18.TabIndex = 48;
-            label18.Text = "label18";
+            oyuncak4_lbl.AutoSize = true;
+            oyuncak4_lbl.Location = new Point(635, 75);
+            oyuncak4_lbl.Name = "oyuncak4_lbl";
+            oyuncak4_lbl.Size = new Size(93, 20);
+            oyuncak4_lbl.TabIndex = 48;
+            oyuncak4_lbl.Text = "eğitici tablet";
+            oyuncak4_lbl.Click += oyuncak4_lbl_Click;
             // 
-            // label19
+            // oyuncak5_lbl
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(827, 75);
-            label19.Name = "label19";
-            label19.Size = new Size(58, 20);
-            label19.TabIndex = 49;
-            label19.Text = "label19";
+            oyuncak5_lbl.AutoSize = true;
+            oyuncak5_lbl.Location = new Point(798, 75);
+            oyuncak5_lbl.Name = "oyuncak5_lbl";
+            oyuncak5_lbl.Size = new Size(103, 20);
+            oyuncak5_lbl.TabIndex = 49;
+            oyuncak5_lbl.Text = "knuckles peluş";
+            oyuncak5_lbl.Click += oyuncak5_lbl_Click;
             // 
-            // label20
+            // oyuncak6_lbl
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(996, 75);
-            label20.Name = "label20";
-            label20.Size = new Size(58, 20);
-            label20.TabIndex = 50;
-            label20.Text = "label20";
+            oyuncak6_lbl.AutoSize = true;
+            oyuncak6_lbl.Location = new Point(996, 75);
+            oyuncak6_lbl.Name = "oyuncak6_lbl";
+            oyuncak6_lbl.Size = new Size(82, 20);
+            oyuncak6_lbl.TabIndex = 50;
+            oyuncak6_lbl.Text = "sonic peluş";
+            oyuncak6_lbl.Click += oyuncak6_lbl_Click;
             // 
-            // label21
+            // oyuncak7_lbl
             // 
-            label21.AutoSize = true;
-            label21.Location = new Point(1147, 75);
-            label21.Name = "label21";
-            label21.Size = new Size(58, 20);
-            label21.TabIndex = 51;
-            label21.Text = "label21";
+            oyuncak7_lbl.AutoSize = true;
+            oyuncak7_lbl.Location = new Point(1147, 75);
+            oyuncak7_lbl.Name = "oyuncak7_lbl";
+            oyuncak7_lbl.Size = new Size(104, 20);
+            oyuncak7_lbl.TabIndex = 51;
+            oyuncak7_lbl.Text = "robot lego kiti";
             // 
-            // label22
+            // oyuncak8_lbl
             // 
-            label22.AutoSize = true;
-            label22.Location = new Point(164, 398);
-            label22.Name = "label22";
-            label22.Size = new Size(58, 20);
-            label22.TabIndex = 52;
-            label22.Text = "label22";
+            oyuncak8_lbl.AutoSize = true;
+            oyuncak8_lbl.Location = new Point(164, 398);
+            oyuncak8_lbl.Name = "oyuncak8_lbl";
+            oyuncak8_lbl.Size = new Size(97, 20);
+            oyuncak8_lbl.TabIndex = 52;
+            oyuncak8_lbl.Text = "arba lego kiti";
             // 
-            // label23
+            // oyuncak9_lbl
             // 
-            label23.AutoSize = true;
-            label23.Location = new Point(332, 398);
-            label23.Name = "label23";
-            label23.Size = new Size(58, 20);
-            label23.TabIndex = 53;
-            label23.Text = "label23";
+            oyuncak9_lbl.AutoSize = true;
+            oyuncak9_lbl.Location = new Point(332, 398);
+            oyuncak9_lbl.Name = "oyuncak9_lbl";
+            oyuncak9_lbl.Size = new Size(142, 20);
+            oyuncak9_lbl.TabIndex = 53;
+            oyuncak9_lbl.Text = "mickey mouse peluş";
             // 
-            // label24
+            // oyuncak10_lbl
             // 
-            label24.AutoSize = true;
-            label24.Location = new Point(497, 398);
-            label24.Name = "label24";
-            label24.Size = new Size(58, 20);
-            label24.TabIndex = 54;
-            label24.Text = "label24";
+            oyuncak10_lbl.AutoSize = true;
+            oyuncak10_lbl.Location = new Point(497, 398);
+            oyuncak10_lbl.Name = "oyuncak10_lbl";
+            oyuncak10_lbl.Size = new Size(136, 20);
+            oyuncak10_lbl.TabIndex = 54;
+            oyuncak10_lbl.Text = "minny mouse peluş";
             // 
-            // label25
+            // oyuncak11_lbl
             // 
-            label25.AutoSize = true;
-            label25.Location = new Point(665, 398);
-            label25.Name = "label25";
-            label25.Size = new Size(58, 20);
-            label25.TabIndex = 55;
-            label25.Text = "label25";
+            oyuncak11_lbl.AutoSize = true;
+            oyuncak11_lbl.Location = new Point(665, 398);
+            oyuncak11_lbl.Name = "oyuncak11_lbl";
+            oyuncak11_lbl.Size = new Size(73, 20);
+            oyuncak11_lbl.TabIndex = 55;
+            oyuncak11_lbl.Text = "misfittens";
             // 
-            // label26
+            // oyuncak12_lbl
             // 
-            label26.AutoSize = true;
-            label26.Location = new Point(827, 398);
-            label26.Name = "label26";
-            label26.Size = new Size(58, 20);
-            label26.TabIndex = 56;
-            label26.Text = "label26";
+            oyuncak12_lbl.AutoSize = true;
+            oyuncak12_lbl.Location = new Point(827, 398);
+            oyuncak12_lbl.Name = "oyuncak12_lbl";
+            oyuncak12_lbl.Size = new Size(95, 20);
+            oyuncak12_lbl.TabIndex = 56;
+            oyuncak12_lbl.Text = "numaralı kap";
             // 
-            // label27
+            // oyuncak13_lbl
             // 
-            label27.AutoSize = true;
-            label27.Location = new Point(996, 398);
-            label27.Name = "label27";
-            label27.Size = new Size(58, 20);
-            label27.TabIndex = 57;
-            label27.Text = "label27";
+            oyuncak13_lbl.AutoSize = true;
+            oyuncak13_lbl.Location = new Point(996, 398);
+            oyuncak13_lbl.Name = "oyuncak13_lbl";
+            oyuncak13_lbl.Size = new Size(111, 20);
+            oyuncak13_lbl.TabIndex = 57;
+            oyuncak13_lbl.Text = " hareketli robot";
             // 
-            // label28
+            // oyuncak14_lbl
             // 
-            label28.AutoSize = true;
-            label28.Location = new Point(1147, 398);
-            label28.Name = "label28";
-            label28.Size = new Size(58, 20);
-            label28.TabIndex = 58;
-            label28.Text = "label28";
+            oyuncak14_lbl.AutoSize = true;
+            oyuncak14_lbl.Location = new Point(1147, 398);
+            oyuncak14_lbl.Name = "oyuncak14_lbl";
+            oyuncak14_lbl.Size = new Size(83, 20);
+            oyuncak14_lbl.TabIndex = 58;
+            oyuncak14_lbl.Text = "stitch peluş";
             // 
             // form2
             // 
@@ -685,20 +702,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(1512, 772);
-            Controls.Add(label28);
-            Controls.Add(label27);
-            Controls.Add(label26);
-            Controls.Add(label25);
-            Controls.Add(label24);
-            Controls.Add(label23);
-            Controls.Add(label22);
-            Controls.Add(label21);
-            Controls.Add(label20);
-            Controls.Add(label19);
-            Controls.Add(label18);
-            Controls.Add(label17);
-            Controls.Add(label16);
-            Controls.Add(label15);
+            Controls.Add(oyuncak14_lbl);
+            Controls.Add(oyuncak13_lbl);
+            Controls.Add(oyuncak12_lbl);
+            Controls.Add(oyuncak11_lbl);
+            Controls.Add(oyuncak10_lbl);
+            Controls.Add(oyuncak9_lbl);
+            Controls.Add(oyuncak8_lbl);
+            Controls.Add(oyuncak7_lbl);
+            Controls.Add(oyuncak6_lbl);
+            Controls.Add(oyuncak5_lbl);
+            Controls.Add(oyuncak4_lbl);
+            Controls.Add(oyuncak3_lbl);
+            Controls.Add(oyuncak2_lbl);
+            Controls.Add(oyuncak1_lbl);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -812,19 +829,19 @@
         private Label label12;
         private Label label13;
         private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label24;
-        private Label label25;
-        private Label label26;
-        private Label label27;
-        private Label label28;
+        private Label oyuncak1_lbl;
+        private Label oyuncak2_lbl;
+        private Label oyuncak3_lbl;
+        private Label oyuncak4_lbl;
+        private Label oyuncak5_lbl;
+        private Label oyuncak6_lbl;
+        private Label oyuncak7_lbl;
+        private Label oyuncak8_lbl;
+        private Label oyuncak9_lbl;
+        private Label oyuncak10_lbl;
+        private Label oyuncak11_lbl;
+        private Label oyuncak12_lbl;
+        private Label oyuncak13_lbl;
+        private Label oyuncak14_lbl;
     }
 }

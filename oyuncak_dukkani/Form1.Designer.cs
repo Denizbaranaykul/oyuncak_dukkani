@@ -36,6 +36,7 @@
             pictureBox1 = new PictureBox();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
+            btn_geliştirici = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -113,11 +114,22 @@
             radioButton2.Text = "kullanıcı girişi";
             radioButton2.UseVisualStyleBackColor = true;
             // 
+            // btn_geliştirici
+            // 
+            btn_geliştirici.Location = new Point(577, 138);
+            btn_geliştirici.Name = "btn_geliştirici";
+            btn_geliştirici.Size = new Size(126, 29);
+            btn_geliştirici.TabIndex = 8;
+            btn_geliştirici.Text = "geliştirici_girişi";
+            btn_geliştirici.UseVisualStyleBackColor = true;
+            btn_geliştirici.Click += btn_geliştirici_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_geliştirici);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(pictureBox1);
@@ -143,5 +155,6 @@
         private PictureBox pictureBox1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
+        private Button btn_geliştirici;
     }
 }
