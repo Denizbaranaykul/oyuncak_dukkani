@@ -413,7 +413,7 @@
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Location = new Point(1297, 98);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(203, 444);
+            checkedListBox1.Size = new Size(161, 444);
             checkedListBox1.TabIndex = 29;
             // 
             // btn_delete
@@ -700,7 +700,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSeaGreen;
+            BackColor = Color.Pink;
             ClientSize = new Size(1512, 772);
             Controls.Add(oyuncak14_lbl);
             Controls.Add(oyuncak13_lbl);
