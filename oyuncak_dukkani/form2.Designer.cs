@@ -176,7 +176,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.lego_kit;
-            pictureBox8.Location = new Point(135, 468);
+            pictureBox8.Location = new Point(135, 421);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(109, 100);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -186,7 +186,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.mickey_mouse_peluş;
-            pictureBox9.Location = new Point(301, 468);
+            pictureBox9.Location = new Point(301, 421);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(109, 100);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -196,7 +196,7 @@
             // pictureBox10
             // 
             pictureBox10.Image = Properties.Resources.minny_mouse_peluş;
-            pictureBox10.Location = new Point(474, 468);
+            pictureBox10.Location = new Point(474, 421);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(109, 100);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@
             // pictureBox11
             // 
             pictureBox11.Image = Properties.Resources.misfittens;
-            pictureBox11.Location = new Point(635, 468);
+            pictureBox11.Location = new Point(635, 421);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(109, 100);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -216,7 +216,7 @@
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.numaralı_kap;
-            pictureBox12.Location = new Point(798, 468);
+            pictureBox12.Location = new Point(798, 421);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(109, 100);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -226,7 +226,7 @@
             // pictureBox13
             // 
             pictureBox13.Image = Properties.Resources.robot;
-            pictureBox13.Location = new Point(966, 468);
+            pictureBox13.Location = new Point(966, 421);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(109, 100);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -236,7 +236,7 @@
             // pictureBox14
             // 
             pictureBox14.Image = Properties.Resources.stitch_peluş;
-            pictureBox14.Location = new Point(1119, 468);
+            pictureBox14.Location = new Point(1119, 421);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(109, 100);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -245,142 +245,158 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.PaleTurquoise;
             button1.Location = new Point(135, 230);
             button1.Name = "button1";
             button1.Size = new Size(109, 29);
             button1.TabIndex = 14;
             button1.Text = "sepete ekle";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            button2.BackColor = Color.PaleTurquoise;
             button2.Location = new Point(301, 230);
             button2.Name = "button2";
             button2.Size = new Size(109, 29);
             button2.TabIndex = 15;
             button2.Text = "sepete ekle";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            button3.BackColor = Color.PaleTurquoise;
             button3.Location = new Point(474, 230);
             button3.Name = "button3";
             button3.Size = new Size(109, 29);
             button3.TabIndex = 16;
             button3.Text = "sepete ekle";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            button4.BackColor = Color.PaleTurquoise;
             button4.Location = new Point(635, 230);
             button4.Name = "button4";
             button4.Size = new Size(109, 29);
             button4.TabIndex = 17;
             button4.Text = "sepete ekle";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
+            button5.BackColor = Color.PaleTurquoise;
             button5.Location = new Point(798, 230);
             button5.Name = "button5";
             button5.Size = new Size(109, 29);
             button5.TabIndex = 18;
             button5.Text = "sepete ekle";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // button6
             // 
+            button6.BackColor = Color.PaleTurquoise;
             button6.Location = new Point(966, 230);
             button6.Name = "button6";
             button6.Size = new Size(109, 29);
             button6.TabIndex = 19;
             button6.Text = "sepete ekle";
-            button6.UseVisualStyleBackColor = true;
+            button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
+            button7.BackColor = Color.PaleTurquoise;
             button7.Location = new Point(1119, 230);
             button7.Name = "button7";
             button7.Size = new Size(109, 29);
             button7.TabIndex = 20;
             button7.Text = "sepete ekle";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
-            button8.Location = new Point(135, 594);
+            button8.BackColor = Color.PaleTurquoise;
+            button8.Location = new Point(135, 547);
             button8.Name = "button8";
             button8.Size = new Size(109, 29);
             button8.TabIndex = 21;
             button8.Text = "sepete ekle";
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
-            button9.Location = new Point(301, 594);
+            button9.BackColor = Color.PaleTurquoise;
+            button9.Location = new Point(301, 547);
             button9.Name = "button9";
             button9.Size = new Size(109, 29);
             button9.TabIndex = 22;
             button9.Text = "sepete ekle";
-            button9.UseVisualStyleBackColor = true;
+            button9.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
-            button10.Location = new Point(474, 594);
+            button10.BackColor = Color.PaleTurquoise;
+            button10.Location = new Point(474, 547);
             button10.Name = "button10";
             button10.Size = new Size(109, 29);
             button10.TabIndex = 23;
             button10.Text = "sepete ekle";
-            button10.UseVisualStyleBackColor = true;
+            button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
-            button11.Location = new Point(635, 594);
+            button11.BackColor = Color.PaleTurquoise;
+            button11.Location = new Point(635, 547);
             button11.Name = "button11";
             button11.Size = new Size(109, 29);
             button11.TabIndex = 24;
             button11.Text = "sepete ekle";
-            button11.UseVisualStyleBackColor = true;
+            button11.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
-            button12.Location = new Point(798, 594);
+            button12.BackColor = Color.PaleTurquoise;
+            button12.Location = new Point(798, 547);
             button12.Name = "button12";
             button12.Size = new Size(109, 29);
             button12.TabIndex = 25;
             button12.Text = "sepete ekle";
-            button12.UseVisualStyleBackColor = true;
+            button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
-            button13.Location = new Point(966, 594);
+            button13.BackColor = Color.PaleTurquoise;
+            button13.Location = new Point(966, 547);
             button13.Name = "button13";
             button13.Size = new Size(109, 29);
             button13.TabIndex = 26;
             button13.Text = "sepete ekle";
-            button13.UseVisualStyleBackColor = true;
+            button13.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
-            button14.Location = new Point(1119, 594);
+            button14.BackColor = Color.PaleTurquoise;
+            button14.Location = new Point(1119, 547);
             button14.Name = "button14";
             button14.Size = new Size(109, 29);
             button14.TabIndex = 27;
             button14.Text = "sepete ekle";
-            button14.UseVisualStyleBackColor = true;
+            button14.UseVisualStyleBackColor = false;
             // 
             // btn_tamamla
             // 
+            btn_tamamla.BackColor = Color.FromArgb(255, 192, 255);
             btn_tamamla.Location = new Point(1309, 548);
             btn_tamamla.Name = "btn_tamamla";
             btn_tamamla.Size = new Size(128, 48);
             btn_tamamla.TabIndex = 28;
             btn_tamamla.Text = "alışverişi tamamla";
-            btn_tamamla.UseVisualStyleBackColor = true;
+            btn_tamamla.UseVisualStyleBackColor = false;
             // 
             // checkedListBox1
             // 
+            checkedListBox1.BackColor = Color.PaleTurquoise;
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Location = new Point(1297, 98);
             checkedListBox1.Name = "checkedListBox1";
@@ -389,16 +405,18 @@
             // 
             // btn_delete
             // 
+            btn_delete.BackColor = Color.FromArgb(255, 192, 255);
             btn_delete.Location = new Point(1309, 602);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(128, 29);
             btn_delete.TabIndex = 30;
             btn_delete.Text = "seçilenleri sil";
-            btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Cornsilk;
             label1.Location = new Point(164, 178);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
@@ -408,6 +426,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Cornsilk;
             label2.Location = new Point(332, 178);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
@@ -417,6 +436,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Cornsilk;
             label3.Location = new Point(505, 178);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
@@ -426,6 +446,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Cornsilk;
             label4.Location = new Point(665, 174);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -435,6 +456,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Cornsilk;
             label5.Location = new Point(827, 178);
             label5.Name = "label5";
             label5.Size = new Size(50, 20);
@@ -444,6 +466,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Cornsilk;
             label6.Location = new Point(996, 178);
             label6.Name = "label6";
             label6.Size = new Size(50, 20);
@@ -453,6 +476,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Cornsilk;
             label7.Location = new Point(1147, 178);
             label7.Name = "label7";
             label7.Size = new Size(50, 20);
@@ -462,7 +486,8 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(164, 548);
+            label8.BackColor = Color.Cornsilk;
+            label8.Location = new Point(164, 501);
             label8.Name = "label8";
             label8.Size = new Size(50, 20);
             label8.TabIndex = 38;
@@ -471,7 +496,8 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(332, 548);
+            label9.BackColor = Color.Cornsilk;
+            label9.Location = new Point(332, 501);
             label9.Name = "label9";
             label9.Size = new Size(50, 20);
             label9.TabIndex = 39;
@@ -480,7 +506,8 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(497, 548);
+            label10.BackColor = Color.Cornsilk;
+            label10.Location = new Point(497, 501);
             label10.Name = "label10";
             label10.Size = new Size(58, 20);
             label10.TabIndex = 40;
@@ -489,7 +516,8 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(665, 548);
+            label11.BackColor = Color.Cornsilk;
+            label11.Location = new Point(665, 501);
             label11.Name = "label11";
             label11.Size = new Size(58, 20);
             label11.TabIndex = 41;
@@ -498,7 +526,8 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(827, 548);
+            label12.BackColor = Color.Cornsilk;
+            label12.Location = new Point(827, 501);
             label12.Name = "label12";
             label12.Size = new Size(58, 20);
             label12.TabIndex = 42;
@@ -507,7 +536,8 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(996, 548);
+            label13.BackColor = Color.Cornsilk;
+            label13.Location = new Point(996, 501);
             label13.Name = "label13";
             label13.Size = new Size(58, 20);
             label13.TabIndex = 43;
@@ -516,7 +546,8 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(1147, 548);
+            label14.BackColor = Color.Cornsilk;
+            label14.Location = new Point(1147, 501);
             label14.Name = "label14";
             label14.Size = new Size(58, 20);
             label14.TabIndex = 44;
@@ -588,7 +619,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(164, 445);
+            label22.Location = new Point(164, 398);
             label22.Name = "label22";
             label22.Size = new Size(58, 20);
             label22.TabIndex = 52;
@@ -597,7 +628,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(332, 445);
+            label23.Location = new Point(332, 398);
             label23.Name = "label23";
             label23.Size = new Size(58, 20);
             label23.TabIndex = 53;
@@ -606,7 +637,7 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(497, 445);
+            label24.Location = new Point(497, 398);
             label24.Name = "label24";
             label24.Size = new Size(58, 20);
             label24.TabIndex = 54;
@@ -615,7 +646,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(665, 445);
+            label25.Location = new Point(665, 398);
             label25.Name = "label25";
             label25.Size = new Size(58, 20);
             label25.TabIndex = 55;
@@ -624,7 +655,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.Location = new Point(827, 445);
+            label26.Location = new Point(827, 398);
             label26.Name = "label26";
             label26.Size = new Size(58, 20);
             label26.TabIndex = 56;
@@ -633,7 +664,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(996, 445);
+            label27.Location = new Point(996, 398);
             label27.Name = "label27";
             label27.Size = new Size(58, 20);
             label27.TabIndex = 57;
@@ -642,7 +673,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.Location = new Point(1147, 445);
+            label28.Location = new Point(1147, 398);
             label28.Name = "label28";
             label28.Size = new Size(58, 20);
             label28.TabIndex = 58;
@@ -652,7 +683,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1515, 772);
+            BackColor = Color.DarkSeaGreen;
+            ClientSize = new Size(1512, 772);
             Controls.Add(label28);
             Controls.Add(label27);
             Controls.Add(label26);
@@ -712,6 +744,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            ForeColor = SystemColors.ControlText;
             Name = "form2";
             Text = "form2";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
