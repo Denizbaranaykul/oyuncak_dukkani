@@ -56,7 +56,9 @@
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
-            button15 = new Button();
+            btn_tamamla = new Button();
+            checkedListBox1 = new CheckedListBox();
+            btn_delete = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -312,21 +314,40 @@
             button14.Text = "sepete ekle";
             button14.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btn_tamamla
             // 
-            button15.Location = new Point(1329, 98);
-            button15.Name = "button15";
-            button15.Size = new Size(128, 29);
-            button15.TabIndex = 28;
-            button15.Text = "sepeti görüntüle";
-            button15.UseVisualStyleBackColor = true;
+            btn_tamamla.Location = new Point(1309, 548);
+            btn_tamamla.Name = "btn_tamamla";
+            btn_tamamla.Size = new Size(128, 48);
+            btn_tamamla.TabIndex = 28;
+            btn_tamamla.Text = "alışverişi tamamla";
+            btn_tamamla.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Location = new Point(1297, 98);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(150, 444);
+            checkedListBox1.TabIndex = 29;
+            // 
+            // btn_delete
+            // 
+            btn_delete.Location = new Point(1309, 602);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(128, 29);
+            btn_delete.TabIndex = 30;
+            btn_delete.Text = "seçilenleri sil";
+            btn_delete.UseVisualStyleBackColor = true;
             // 
             // form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1515, 772);
-            Controls.Add(button15);
+            Controls.Add(btn_delete);
+            Controls.Add(checkedListBox1);
+            Controls.Add(btn_tamamla);
             Controls.Add(button14);
             Controls.Add(button13);
             Controls.Add(button12);
@@ -404,6 +425,8 @@
         private Button button12;
         private Button button13;
         private Button button14;
-        private Button button15;
+        private Button btn_tamamla;
+        private CheckedListBox checkedListBox1;
+        private Button btn_delete;
     }
 }

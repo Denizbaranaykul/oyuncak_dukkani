@@ -16,7 +16,8 @@ namespace oyuncak_dukkani
             {
                 if (textBox1.Text=="musteri"&&Convert.ToInt32(textBox2.Text)==12345)
                 {
-
+                    form2 musteri = new form2();
+                    musteri.Show();
                 }
                 else
                 {
