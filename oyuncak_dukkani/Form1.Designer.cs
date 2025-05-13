@@ -123,6 +123,7 @@
             btn_geliştirici.TabIndex = 8;
             btn_geliştirici.Text = "geliştirici_girişi";
             btn_geliştirici.UseVisualStyleBackColor = true;
+            btn_geliştirici.Click += btn_geliştirici_Click;
             // 
             // label3
             // 

@@ -406,6 +406,7 @@
             btn_tamamla.TabIndex = 28;
             btn_tamamla.Text = "alışverişi tamamla";
             btn_tamamla.UseVisualStyleBackColor = false;
+            btn_tamamla.Click += btn_tamamla_Click;
             // 
             // checkedListBox1
             // 
@@ -602,7 +603,6 @@
             oyuncak4_lbl.Size = new Size(93, 20);
             oyuncak4_lbl.TabIndex = 48;
             oyuncak4_lbl.Text = "eğitici tablet";
-            oyuncak4_lbl.Click += oyuncak4_lbl_Click;
             // 
             // oyuncak5_lbl
             // 
@@ -612,7 +612,6 @@
             oyuncak5_lbl.Size = new Size(103, 20);
             oyuncak5_lbl.TabIndex = 49;
             oyuncak5_lbl.Text = "knuckles peluş";
-            oyuncak5_lbl.Click += oyuncak5_lbl_Click;
             // 
             // oyuncak6_lbl
             // 
@@ -622,7 +621,6 @@
             oyuncak6_lbl.Size = new Size(82, 20);
             oyuncak6_lbl.TabIndex = 50;
             oyuncak6_lbl.Text = "sonic peluş";
-            oyuncak6_lbl.Click += oyuncak6_lbl_Click;
             // 
             // oyuncak7_lbl
             // 

@@ -95,23 +95,17 @@ namespace oyuncak_dukkani
 
         }
 
-        private void oyuncak4_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void oyuncak5_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void oyuncak6_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
+      
+      
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            // Eğer işaretli hiçbir öğe yoksa uyarı ver
+            if (checkedListBox1.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("Seçili ürün yok!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Devam etme
+            }
             // Önce işaretli öğeleri geçici bir listeye al
             List<object> secilenler = new List<object>();
 
@@ -125,6 +119,18 @@ namespace oyuncak_dukkani
             {
                 checkedListBox1.Items.Remove(item);
             }
+        }
+
+        private void btn_tamamla_Click(object sender, EventArgs e)
+        {
+            if(checkedListBox1.Items.Count==0)
+            {
+                MessageBox.Show("sepetiniz zaten boş");
+                return;
+            }
+            checkedListBox1.Items.Clear();
+            MessageBox.Show("Alışveriş başarıyla tamamlandı");
+
         }
     }
 }
