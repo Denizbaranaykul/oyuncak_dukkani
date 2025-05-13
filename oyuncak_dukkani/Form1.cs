@@ -29,8 +29,8 @@ namespace oyuncak_dukkani
             else if (radioButton2.Checked && GirisKontrol(kullaniciAdi, sifre, sql2))
             {
                 MessageBox.Show("Giriþ baþarýlý!");
-                //Form3 form3 = new Form3();
-                //form3.Show();
+                Form3 form3 = new Form3();
+                form3.Show();
             }
             else
             {

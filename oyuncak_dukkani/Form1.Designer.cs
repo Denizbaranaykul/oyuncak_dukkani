@@ -109,10 +109,10 @@
             radioButton2.AutoSize = true;
             radioButton2.Location = new Point(371, 118);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(120, 24);
+            radioButton2.Size = new Size(118, 24);
             radioButton2.TabIndex = 7;
             radioButton2.TabStop = true;
-            radioButton2.Text = "kullanıcı girişi";
+            radioButton2.Text = "yönetici girişi";
             radioButton2.UseVisualStyleBackColor = true;
             // 
             // btn_geliştirici
