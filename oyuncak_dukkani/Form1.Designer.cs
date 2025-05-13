@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            txt_ad = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txt_sifre = new TextBox();
             button1 = new Button();
             pictureBox1 = new PictureBox();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             btn_geliştirici = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txt_ad
             // 
-            textBox1.Location = new Point(238, 190);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(220, 27);
-            textBox1.TabIndex = 0;
+            txt_ad.Location = new Point(238, 190);
+            txt_ad.Name = "txt_ad";
+            txt_ad.Size = new Size(220, 27);
+            txt_ad.TabIndex = 0;
             // 
             // label1
             // 
@@ -65,12 +66,12 @@
             label2.TabIndex = 3;
             label2.Text = "şifre";
             // 
-            // textBox2
+            // txt_sifre
             // 
-            textBox2.Location = new Point(238, 274);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(220, 27);
-            textBox2.TabIndex = 2;
+            txt_sifre.Location = new Point(238, 274);
+            txt_sifre.Name = "txt_sifre";
+            txt_sifre.Size = new Size(220, 27);
+            txt_sifre.TabIndex = 2;
             // 
             // button1
             // 
@@ -122,22 +123,32 @@
             btn_geliştirici.TabIndex = 8;
             btn_geliştirici.Text = "geliştirici_girişi";
             btn_geliştirici.UseVisualStyleBackColor = true;
-            btn_geliştirici.Click += btn_geliştirici_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8.25F);
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(238, 231);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 19);
+            label3.TabIndex = 9;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(btn_geliştirici);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(textBox2);
+            Controls.Add(txt_sifre);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(txt_ad);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -147,14 +158,15 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txt_ad;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txt_sifre;
         private Button button1;
         private PictureBox pictureBox1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private Button btn_geliştirici;
+        private Label label3;
     }
 }
