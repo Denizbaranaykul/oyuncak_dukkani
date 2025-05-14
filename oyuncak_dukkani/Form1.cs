@@ -1,8 +1,7 @@
-using MySql.Data.MySqlClient;
-using System.Data;
-using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Diagnostics.Eventing.Reader;
-using System.Security.Cryptography.X509Certificates;
+using System;
+using System.Data.SQLite; // MySQL yerine SQLite kullanýyoruz
+using System.Windows.Forms;
+
 namespace oyuncak_dukkani
 {
     public partial class Form1 : Form
@@ -20,6 +19,7 @@ namespace oyuncak_dukkani
             string sql = "SELECT * FROM musteri WHERE kullanici_adi = @kadi AND sifre = @sifre";
             string sql2 = "SELECT * FROM yonetici WHERE kullanici_adi = @kadi AND sifre = @sifre";
 
+            // Kullanýcý ya da yönetici giriþ kontrolünü yap
             if (radioButton1.Checked && GirisKontrol(kullaniciAdi, sifre, sql))
             {
                 MessageBox.Show("Giriþ baþarýlý!");
@@ -37,20 +37,21 @@ namespace oyuncak_dukkani
                 MessageBox.Show("Hatalý kullanýcý adý veya þifre!");
                 label3.Text = "Kullanýcý adý veya þifre yanlýþ!";
             }
-
-
         }
+
         private bool GirisKontrol(string kullaniciAdi, string sifre, string sql)
         {
-            string connStr = "Server=localhost;Database=oyuncak_dukkan;Uid=root;Pwd=12345;";
+            // SQLite baðlantý dizesi
+            string connStr = @"Data Source=veritabani.db;Version=3;"; // Veritabaný dosyasýnýn yolunu doðru ayarlamalýsýn
 
-            using (var conn = new MySqlConnection(connStr))
+            using (var conn = new SQLiteConnection(connStr))
             {
                 try
                 {
                     conn.Open();
-                    using (var cmd = new MySqlCommand(sql, conn))
+                    using (var cmd = new SQLiteCommand(sql, conn))
                     {
+                        // SQL parametrelerini ekle
                         cmd.Parameters.AddWithValue("@kadi", kullaniciAdi);
                         cmd.Parameters.AddWithValue("@sifre", sifre);
 
@@ -70,7 +71,7 @@ namespace oyuncak_dukkani
 
         private void btn_geliþtirici_Click(object sender, EventArgs e)
         {
-            form2 form2=new form2();
+            form2 form2 = new form2();
             form2.Show();
         }
     }
