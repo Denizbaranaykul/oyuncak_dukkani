@@ -432,7 +432,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Cornsilk;
-            label1.Location = new Point(164, 178);
+            label1.Location = new Point(164, 201);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 31;
@@ -442,7 +442,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Cornsilk;
-            label2.Location = new Point(332, 178);
+            label2.Location = new Point(332, 201);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
             label2.TabIndex = 32;
@@ -452,7 +452,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Cornsilk;
-            label3.Location = new Point(505, 178);
+            label3.Location = new Point(505, 201);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 33;
@@ -462,7 +462,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Cornsilk;
-            label4.Location = new Point(665, 174);
+            label4.Location = new Point(665, 197);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
             label4.TabIndex = 34;
@@ -472,7 +472,7 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Cornsilk;
-            label5.Location = new Point(827, 178);
+            label5.Location = new Point(827, 197);
             label5.Name = "label5";
             label5.Size = new Size(50, 20);
             label5.TabIndex = 35;
@@ -482,7 +482,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Cornsilk;
-            label6.Location = new Point(996, 178);
+            label6.Location = new Point(996, 197);
             label6.Name = "label6";
             label6.Size = new Size(50, 20);
             label6.TabIndex = 36;
@@ -492,7 +492,7 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.Cornsilk;
-            label7.Location = new Point(1147, 178);
+            label7.Location = new Point(1147, 197);
             label7.Name = "label7";
             label7.Size = new Size(50, 20);
             label7.TabIndex = 37;
@@ -502,7 +502,7 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.Cornsilk;
-            label8.Location = new Point(164, 501);
+            label8.Location = new Point(164, 522);
             label8.Name = "label8";
             label8.Size = new Size(50, 20);
             label8.TabIndex = 38;
@@ -512,7 +512,7 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.Cornsilk;
-            label9.Location = new Point(332, 501);
+            label9.Location = new Point(332, 522);
             label9.Name = "label9";
             label9.Size = new Size(50, 20);
             label9.TabIndex = 39;
@@ -522,7 +522,7 @@
             // 
             label10.AutoSize = true;
             label10.BackColor = Color.Cornsilk;
-            label10.Location = new Point(497, 501);
+            label10.Location = new Point(497, 522);
             label10.Name = "label10";
             label10.Size = new Size(58, 20);
             label10.TabIndex = 40;
@@ -532,7 +532,7 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.Cornsilk;
-            label11.Location = new Point(665, 501);
+            label11.Location = new Point(665, 522);
             label11.Name = "label11";
             label11.Size = new Size(58, 20);
             label11.TabIndex = 41;
@@ -542,7 +542,7 @@
             // 
             label12.AutoSize = true;
             label12.BackColor = Color.Cornsilk;
-            label12.Location = new Point(827, 501);
+            label12.Location = new Point(827, 522);
             label12.Name = "label12";
             label12.Size = new Size(58, 20);
             label12.TabIndex = 42;
@@ -552,7 +552,7 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.Cornsilk;
-            label13.Location = new Point(996, 501);
+            label13.Location = new Point(996, 522);
             label13.Name = "label13";
             label13.Size = new Size(58, 20);
             label13.TabIndex = 43;
@@ -562,7 +562,7 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.Cornsilk;
-            label14.Location = new Point(1147, 501);
+            label14.Location = new Point(1147, 522);
             label14.Name = "label14";
             label14.Size = new Size(58, 20);
             label14.TabIndex = 44;

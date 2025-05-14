@@ -123,6 +123,16 @@ namespace oyuncak_dukkani.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap knuckles_peluş1 {
+            get {
+                object obj = ResourceManager.GetObject("knuckles_peluş1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap lego {
             get {
                 object obj = ResourceManager.GetObject("lego", resourceCulture);

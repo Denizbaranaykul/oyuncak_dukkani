@@ -85,11 +85,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Untitled_design;
+            pictureBox1.Image = Properties.Resources.knuckles_peluş1;
             pictureBox1.Location = new Point(238, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(220, 88);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -139,6 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.RosyBrown;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
             Controls.Add(btn_geliştirici);
