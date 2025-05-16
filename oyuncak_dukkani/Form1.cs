@@ -1,8 +1,7 @@
 using MySql.Data.MySqlClient;
-using System.Data;
-using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Diagnostics.Eventing.Reader;
-using System.Security.Cryptography.X509Certificates;
+using System;
+using System.Windows.Forms;
+
 namespace oyuncak_dukkani
 {
     public partial class Form1 : Form
@@ -14,35 +13,57 @@ namespace oyuncak_dukkani
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string kullaniciAdi = txt_ad.Text;
-            string sifre = txt_sifre.Text;
+            string kullaniciAdi = txt_ad.Text.Trim();
+            string sifre = txt_sifre.Text.Trim();
 
-            string sql = "SELECT * FROM musteri WHERE kullanici_adi = @kadi AND sifre = @sifre";
-            string sql2 = "SELECT * FROM yonetici WHERE kullanici_adi = @kadi AND sifre = @sifre";
-
-            if (radioButton1.Checked && GirisKontrol(kullaniciAdi, sifre, sql))
+            if (string.IsNullOrEmpty(kullaniciAdi) || string.IsNullOrEmpty(sifre))
             {
-                MessageBox.Show("Giriþ baþarýlý!");
-                form2 musteri = new form2();
-                musteri.Show();
-            }
-            else if (radioButton2.Checked && GirisKontrol(kullaniciAdi, sifre, sql2))
-            {
-                MessageBox.Show("Giriþ baþarýlý!");
-                Form3 form3 = new Form3();
-                form3.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hatalý kullanýcý adý veya þifre!");
-                label3.Text = "Kullanýcý adý veya þifre yanlýþ!";
+                MessageBox.Show("Lütfen kullanýcý adý ve þifre girin!");
+                return;
             }
 
+            if (!radioButton1.Checked && !radioButton2.Checked)
+            {
+                MessageBox.Show("Lütfen bir giriþ türü seçin!");
+                return;
+            }
 
+            if (radioButton1.Checked) // Müþteri giriþ
+            {
+                User musteri = GirisKontrol(kullaniciAdi, sifre, "SELECT * FROM musteri WHERE kullanici_adi=@kadi AND sifre=@sifre");
+                if (musteri != null)
+                {
+                    MessageBox.Show("Müþteri giriþi baþarýlý!");
+                    form2 musteriForm = new form2(musteri);
+                    musteriForm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Hatalý kullanýcý adý veya þifre!");
+                }
+            }
+            else if (radioButton2.Checked) // Yönetici giriþ
+            {
+                User yonetici = GirisKontrol(kullaniciAdi, sifre, "SELECT * FROM yonetici WHERE kullanici_adi=@kadi AND sifre=@sifre");
+                if (yonetici != null)
+                {
+                    MessageBox.Show("Yönetici giriþi baþarýlý!");
+                    Form3 yoneticiForm = new Form3(yonetici);
+                    yoneticiForm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Hatalý kullanýcý adý veya þifre!");
+                }
+            }
         }
-        private bool GirisKontrol(string kullaniciAdi, string sifre, string sql)
+
+        private User GirisKontrol(string kullaniciAdi, string sifre, string sql)
         {
             string connStr = "Server=localhost;Database=oyuncak_dukkan;Uid=root;Pwd=12345;";
+            User user = null;
 
             using (var conn = new MySqlConnection(connStr))
             {
@@ -56,22 +77,32 @@ namespace oyuncak_dukkani
 
                         using (var reader = cmd.ExecuteReader())
                         {
-                            return reader.Read(); // true dönerse giriþ baþarýlýdýr
+                            if (reader.Read())
+                            {
+                                user = new User
+                                {
+                                    Id = Convert.ToInt32(reader["id"]),
+                                    KullaniciAdi = reader["kullanici_adi"].ToString(),
+                                    Sifre = reader["sifre"].ToString(),
+                                    Isim = reader["isim"].ToString(),
+                                    Soyisim = reader["soyisim"].ToString()
+                                };
+                            }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Veritabaný baðlantý hatasý: " + ex.Message);
-                    return false;
                 }
             }
+            return user;
         }
 
-        private void btn_geliþtirici_Click(object sender, EventArgs e)
+        private void btnKayitOl_Click(object sender, EventArgs e)
         {
-            form2 form2=new form2();
-            form2.Show();
+            Form4 kayýt_form = new Form4();
+            kayýt_form.Show();
         }
     }
 }

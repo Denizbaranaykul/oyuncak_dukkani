@@ -59,20 +59,20 @@
             btn_tamamla = new Button();
             checkedListBox1 = new CheckedListBox();
             btn_delete = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
+            oyuncak1_fiyat_lbl = new Label();
+            oyuncak2_fiyat_lbl = new Label();
+            oyuncak3_fiyat_lbl = new Label();
+            oyuncak4_fiyat_lbl = new Label();
+            oyuncak5_fiyat_lbl = new Label();
+            oyuncak6_fiyat_lbl = new Label();
+            oyuncak7_fiyat_lbl = new Label();
+            oyuncak8_fiyat_lbl = new Label();
+            oyuncak9_fiyat_lbl = new Label();
+            oyuncak10_fiyat_lbl = new Label();
+            oyuncak11_fiyat_lbl = new Label();
+            oyuncak12_fiyat_lbl = new Label();
+            oyuncak13_fiyat_lbl = new Label();
+            oyuncak14_fiyat_lbl = new Label();
             oyuncak1_lbl = new Label();
             oyuncak2_lbl = new Label();
             oyuncak3_lbl = new Label();
@@ -87,6 +87,9 @@
             oyuncak12_lbl = new Label();
             oyuncak13_lbl = new Label();
             oyuncak14_lbl = new Label();
+            lblToplamFiyat = new Label();
+            btnGeriDon = new Button();
+            lblKullaniciAdi = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -428,145 +431,145 @@
             btn_delete.UseVisualStyleBackColor = false;
             btn_delete.Click += btn_delete_Click;
             // 
-            // label1
+            // oyuncak1_fiyat_lbl
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Cornsilk;
-            label1.Location = new Point(164, 201);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 31;
-            label1.Text = "label1";
+            oyuncak1_fiyat_lbl.AutoSize = true;
+            oyuncak1_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak1_fiyat_lbl.Location = new Point(164, 197);
+            oyuncak1_fiyat_lbl.Name = "oyuncak1_fiyat_lbl";
+            oyuncak1_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak1_fiyat_lbl.TabIndex = 31;
+            oyuncak1_fiyat_lbl.Text = "label1";
             // 
-            // label2
+            // oyuncak2_fiyat_lbl
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Cornsilk;
-            label2.Location = new Point(332, 201);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 32;
-            label2.Text = "label2";
+            oyuncak2_fiyat_lbl.AutoSize = true;
+            oyuncak2_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak2_fiyat_lbl.Location = new Point(332, 197);
+            oyuncak2_fiyat_lbl.Name = "oyuncak2_fiyat_lbl";
+            oyuncak2_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak2_fiyat_lbl.TabIndex = 32;
+            oyuncak2_fiyat_lbl.Text = "label2";
             // 
-            // label3
+            // oyuncak3_fiyat_lbl
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Cornsilk;
-            label3.Location = new Point(505, 201);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 33;
-            label3.Text = "label3";
+            oyuncak3_fiyat_lbl.AutoSize = true;
+            oyuncak3_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak3_fiyat_lbl.Location = new Point(505, 201);
+            oyuncak3_fiyat_lbl.Name = "oyuncak3_fiyat_lbl";
+            oyuncak3_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak3_fiyat_lbl.TabIndex = 33;
+            oyuncak3_fiyat_lbl.Text = "label3";
             // 
-            // label4
+            // oyuncak4_fiyat_lbl
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Cornsilk;
-            label4.Location = new Point(665, 197);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 34;
-            label4.Text = "label4";
+            oyuncak4_fiyat_lbl.AutoSize = true;
+            oyuncak4_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak4_fiyat_lbl.Location = new Point(665, 197);
+            oyuncak4_fiyat_lbl.Name = "oyuncak4_fiyat_lbl";
+            oyuncak4_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak4_fiyat_lbl.TabIndex = 34;
+            oyuncak4_fiyat_lbl.Text = "label4";
             // 
-            // label5
+            // oyuncak5_fiyat_lbl
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Cornsilk;
-            label5.Location = new Point(827, 197);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 35;
-            label5.Text = "label5";
+            oyuncak5_fiyat_lbl.AutoSize = true;
+            oyuncak5_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak5_fiyat_lbl.Location = new Point(827, 197);
+            oyuncak5_fiyat_lbl.Name = "oyuncak5_fiyat_lbl";
+            oyuncak5_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak5_fiyat_lbl.TabIndex = 35;
+            oyuncak5_fiyat_lbl.Text = "label5";
             // 
-            // label6
+            // oyuncak6_fiyat_lbl
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Cornsilk;
-            label6.Location = new Point(996, 197);
-            label6.Name = "label6";
-            label6.Size = new Size(50, 20);
-            label6.TabIndex = 36;
-            label6.Text = "label6";
+            oyuncak6_fiyat_lbl.AutoSize = true;
+            oyuncak6_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak6_fiyat_lbl.Location = new Point(996, 197);
+            oyuncak6_fiyat_lbl.Name = "oyuncak6_fiyat_lbl";
+            oyuncak6_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak6_fiyat_lbl.TabIndex = 36;
+            oyuncak6_fiyat_lbl.Text = "label6";
             // 
-            // label7
+            // oyuncak7_fiyat_lbl
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Cornsilk;
-            label7.Location = new Point(1147, 197);
-            label7.Name = "label7";
-            label7.Size = new Size(50, 20);
-            label7.TabIndex = 37;
-            label7.Text = "label7";
+            oyuncak7_fiyat_lbl.AutoSize = true;
+            oyuncak7_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak7_fiyat_lbl.Location = new Point(1147, 197);
+            oyuncak7_fiyat_lbl.Name = "oyuncak7_fiyat_lbl";
+            oyuncak7_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak7_fiyat_lbl.TabIndex = 37;
+            oyuncak7_fiyat_lbl.Text = "label7";
             // 
-            // label8
+            // oyuncak8_fiyat_lbl
             // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Cornsilk;
-            label8.Location = new Point(164, 522);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 38;
-            label8.Text = "label8";
+            oyuncak8_fiyat_lbl.AutoSize = true;
+            oyuncak8_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak8_fiyat_lbl.Location = new Point(164, 522);
+            oyuncak8_fiyat_lbl.Name = "oyuncak8_fiyat_lbl";
+            oyuncak8_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak8_fiyat_lbl.TabIndex = 38;
+            oyuncak8_fiyat_lbl.Text = "label8";
             // 
-            // label9
+            // oyuncak9_fiyat_lbl
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Cornsilk;
-            label9.Location = new Point(332, 522);
-            label9.Name = "label9";
-            label9.Size = new Size(50, 20);
-            label9.TabIndex = 39;
-            label9.Text = "label9";
+            oyuncak9_fiyat_lbl.AutoSize = true;
+            oyuncak9_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak9_fiyat_lbl.Location = new Point(332, 522);
+            oyuncak9_fiyat_lbl.Name = "oyuncak9_fiyat_lbl";
+            oyuncak9_fiyat_lbl.Size = new Size(50, 20);
+            oyuncak9_fiyat_lbl.TabIndex = 39;
+            oyuncak9_fiyat_lbl.Text = "label9";
             // 
-            // label10
+            // oyuncak10_fiyat_lbl
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Cornsilk;
-            label10.Location = new Point(497, 522);
-            label10.Name = "label10";
-            label10.Size = new Size(58, 20);
-            label10.TabIndex = 40;
-            label10.Text = "label10";
+            oyuncak10_fiyat_lbl.AutoSize = true;
+            oyuncak10_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak10_fiyat_lbl.Location = new Point(497, 522);
+            oyuncak10_fiyat_lbl.Name = "oyuncak10_fiyat_lbl";
+            oyuncak10_fiyat_lbl.Size = new Size(58, 20);
+            oyuncak10_fiyat_lbl.TabIndex = 40;
+            oyuncak10_fiyat_lbl.Text = "label10";
             // 
-            // label11
+            // oyuncak11_fiyat_lbl
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Cornsilk;
-            label11.Location = new Point(665, 522);
-            label11.Name = "label11";
-            label11.Size = new Size(58, 20);
-            label11.TabIndex = 41;
-            label11.Text = "label11";
+            oyuncak11_fiyat_lbl.AutoSize = true;
+            oyuncak11_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak11_fiyat_lbl.Location = new Point(665, 522);
+            oyuncak11_fiyat_lbl.Name = "oyuncak11_fiyat_lbl";
+            oyuncak11_fiyat_lbl.Size = new Size(58, 20);
+            oyuncak11_fiyat_lbl.TabIndex = 41;
+            oyuncak11_fiyat_lbl.Text = "label11";
             // 
-            // label12
+            // oyuncak12_fiyat_lbl
             // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Cornsilk;
-            label12.Location = new Point(827, 522);
-            label12.Name = "label12";
-            label12.Size = new Size(58, 20);
-            label12.TabIndex = 42;
-            label12.Text = "label12";
+            oyuncak12_fiyat_lbl.AutoSize = true;
+            oyuncak12_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak12_fiyat_lbl.Location = new Point(827, 522);
+            oyuncak12_fiyat_lbl.Name = "oyuncak12_fiyat_lbl";
+            oyuncak12_fiyat_lbl.Size = new Size(58, 20);
+            oyuncak12_fiyat_lbl.TabIndex = 42;
+            oyuncak12_fiyat_lbl.Text = "label12";
             // 
-            // label13
+            // oyuncak13_fiyat_lbl
             // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Cornsilk;
-            label13.Location = new Point(996, 522);
-            label13.Name = "label13";
-            label13.Size = new Size(58, 20);
-            label13.TabIndex = 43;
-            label13.Text = "label13";
+            oyuncak13_fiyat_lbl.AutoSize = true;
+            oyuncak13_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak13_fiyat_lbl.Location = new Point(996, 522);
+            oyuncak13_fiyat_lbl.Name = "oyuncak13_fiyat_lbl";
+            oyuncak13_fiyat_lbl.Size = new Size(58, 20);
+            oyuncak13_fiyat_lbl.TabIndex = 43;
+            oyuncak13_fiyat_lbl.Text = "label13";
             // 
-            // label14
+            // oyuncak14_fiyat_lbl
             // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Cornsilk;
-            label14.Location = new Point(1147, 522);
-            label14.Name = "label14";
-            label14.Size = new Size(58, 20);
-            label14.TabIndex = 44;
-            label14.Text = "label14";
+            oyuncak14_fiyat_lbl.AutoSize = true;
+            oyuncak14_fiyat_lbl.BackColor = Color.Cornsilk;
+            oyuncak14_fiyat_lbl.Location = new Point(1147, 522);
+            oyuncak14_fiyat_lbl.Name = "oyuncak14_fiyat_lbl";
+            oyuncak14_fiyat_lbl.Size = new Size(58, 20);
+            oyuncak14_fiyat_lbl.TabIndex = 44;
+            oyuncak14_fiyat_lbl.Text = "label14";
             // 
             // oyuncak1_lbl
             // 
@@ -694,12 +697,44 @@
             oyuncak14_lbl.TabIndex = 58;
             oyuncak14_lbl.Text = "stitch peluş";
             // 
+            // lblToplamFiyat
+            // 
+            lblToplamFiyat.AutoSize = true;
+            lblToplamFiyat.Location = new Point(1309, 501);
+            lblToplamFiyat.Name = "lblToplamFiyat";
+            lblToplamFiyat.Size = new Size(40, 20);
+            lblToplamFiyat.TabIndex = 59;
+            lblToplamFiyat.Text = "tutar";
+            // 
+            // btnGeriDon
+            // 
+            btnGeriDon.BackColor = Color.Lime;
+            btnGeriDon.Location = new Point(12, 12);
+            btnGeriDon.Name = "btnGeriDon";
+            btnGeriDon.Size = new Size(94, 29);
+            btnGeriDon.TabIndex = 60;
+            btnGeriDon.Text = "geriye dön";
+            btnGeriDon.UseVisualStyleBackColor = false;
+            btnGeriDon.Click += btnGeriDon_Click;
+            // 
+            // lblKullaniciAdi
+            // 
+            lblKullaniciAdi.AutoSize = true;
+            lblKullaniciAdi.Location = new Point(135, 16);
+            lblKullaniciAdi.Name = "lblKullaniciAdi";
+            lblKullaniciAdi.Size = new Size(88, 20);
+            lblKullaniciAdi.TabIndex = 61;
+            lblKullaniciAdi.Text = "kullanıcı adı";
+            // 
             // form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Pink;
             ClientSize = new Size(1512, 772);
+            Controls.Add(lblKullaniciAdi);
+            Controls.Add(btnGeriDon);
+            Controls.Add(lblToplamFiyat);
             Controls.Add(oyuncak14_lbl);
             Controls.Add(oyuncak13_lbl);
             Controls.Add(oyuncak12_lbl);
@@ -714,20 +749,20 @@
             Controls.Add(oyuncak3_lbl);
             Controls.Add(oyuncak2_lbl);
             Controls.Add(oyuncak1_lbl);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(oyuncak14_fiyat_lbl);
+            Controls.Add(oyuncak13_fiyat_lbl);
+            Controls.Add(oyuncak12_fiyat_lbl);
+            Controls.Add(oyuncak11_fiyat_lbl);
+            Controls.Add(oyuncak10_fiyat_lbl);
+            Controls.Add(oyuncak9_fiyat_lbl);
+            Controls.Add(oyuncak8_fiyat_lbl);
+            Controls.Add(oyuncak7_fiyat_lbl);
+            Controls.Add(oyuncak6_fiyat_lbl);
+            Controls.Add(oyuncak5_fiyat_lbl);
+            Controls.Add(oyuncak4_fiyat_lbl);
+            Controls.Add(oyuncak3_fiyat_lbl);
+            Controls.Add(oyuncak2_fiyat_lbl);
+            Controls.Add(oyuncak1_fiyat_lbl);
             Controls.Add(btn_delete);
             Controls.Add(checkedListBox1);
             Controls.Add(btn_tamamla);
@@ -762,6 +797,7 @@
             ForeColor = SystemColors.ControlText;
             Name = "form2";
             Text = "form2";
+            Load += form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -813,20 +849,20 @@
         private Button btn_tamamla;
         private CheckedListBox checkedListBox1;
         private Button btn_delete;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
+        private Label oyuncak1_fiyat_lbl;
+        private Label oyuncak2_fiyat_lbl;
+        private Label oyuncak3_fiyat_lbl;
+        private Label oyuncak4_fiyat_lbl;
+        private Label oyuncak5_fiyat_lbl;
+        private Label oyuncak6_fiyat_lbl;
+        private Label oyuncak7_fiyat_lbl;
+        private Label oyuncak8_fiyat_lbl;
+        private Label oyuncak9_fiyat_lbl;
+        private Label oyuncak10_fiyat_lbl;
+        private Label oyuncak11_fiyat_lbl;
+        private Label oyuncak12_fiyat_lbl;
+        private Label oyuncak13_fiyat_lbl;
+        private Label oyuncak14_fiyat_lbl;
         private Label oyuncak1_lbl;
         private Label oyuncak2_lbl;
         private Label oyuncak3_lbl;
@@ -841,5 +877,8 @@
         private Label oyuncak12_lbl;
         private Label oyuncak13_lbl;
         private Label oyuncak14_lbl;
+        private Label lblToplamFiyat;
+        private Button btnGeriDon;
+        private Label lblKullaniciAdi;
     }
 }

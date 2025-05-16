@@ -32,12 +32,12 @@
             label1 = new Label();
             label2 = new Label();
             txt_sifre = new TextBox();
-            button1 = new Button();
+            btn_giriş = new Button();
             pictureBox1 = new PictureBox();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
-            btn_geliştirici = new Button();
             label3 = new Label();
+            btnKayitOl = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -73,15 +73,15 @@
             txt_sifre.Size = new Size(220, 27);
             txt_sifre.TabIndex = 2;
             // 
-            // button1
+            // btn_giriş
             // 
-            button1.Location = new Point(238, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(220, 58);
-            button1.TabIndex = 4;
-            button1.Text = "giriş";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_giriş.Location = new Point(238, 326);
+            btn_giriş.Name = "btn_giriş";
+            btn_giriş.Size = new Size(220, 58);
+            btn_giriş.TabIndex = 4;
+            btn_giriş.Text = "giriş";
+            btn_giriş.UseVisualStyleBackColor = true;
+            btn_giriş.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -115,16 +115,6 @@
             radioButton2.Text = "yönetici girişi";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // btn_geliştirici
-            // 
-            btn_geliştirici.Location = new Point(577, 138);
-            btn_geliştirici.Name = "btn_geliştirici";
-            btn_geliştirici.Size = new Size(126, 29);
-            btn_geliştirici.TabIndex = 8;
-            btn_geliştirici.Text = "geliştirici_girişi";
-            btn_geliştirici.UseVisualStyleBackColor = true;
-            btn_geliştirici.Click += btn_geliştirici_Click;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -135,18 +125,28 @@
             label3.Size = new Size(0, 19);
             label3.TabIndex = 9;
             // 
+            // btnKayitOl
+            // 
+            btnKayitOl.Location = new Point(238, 401);
+            btnKayitOl.Name = "btnKayitOl";
+            btnKayitOl.Size = new Size(220, 37);
+            btnKayitOl.TabIndex = 10;
+            btnKayitOl.Text = "Kayıt Ol";
+            btnKayitOl.UseVisualStyleBackColor = true;
+            btnKayitOl.Click += btnKayitOl_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 469);
+            Controls.Add(btnKayitOl);
             Controls.Add(label3);
-            Controls.Add(btn_geliştirici);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
+            Controls.Add(btn_giriş);
             Controls.Add(label2);
             Controls.Add(txt_sifre);
             Controls.Add(label1);
@@ -164,11 +164,11 @@
         private Label label1;
         private Label label2;
         private TextBox txt_sifre;
-        private Button button1;
+        private Button btn_giriş;
         private PictureBox pictureBox1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private Button btn_geliştirici;
         private Label label3;
+        private Button btnKayitOl;
     }
 }

@@ -29,136 +29,164 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            comboBox1 = new ComboBox();
-            label1 = new Label();
-            label15 = new Label();
-            label16 = new Label();
+            btn_bilgi_guncelle = new Button();
+            btn_geri_dön = new Button();
+            lblFiyat = new Label();
+            lblFiyatSol = new Label();
+            lblStok = new Label();
+            lblStokAdediSol = new Label();
+            cmbUrunSecSol = new ComboBox();
+            lblUrunSecinizSol = new Label();
+            lblUrunBilgileri = new Label();
+            lblUrunGuncelleme = new Label();
             panel3 = new Panel();
-            label12 = new Label();
-            comboBox2 = new ComboBox();
-            button3 = new Button();
-            pictureBox2 = new PictureBox();
-            button4 = new Button();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            lblUrunSecinizSag = new Label();
+            cmbUrunSecSag = new ComboBox();
+            btnGuncelle = new Button();
+            pbUrunResmi = new PictureBox();
+            btnFotografEkle = new Button();
+            txtUrunFiyat = new TextBox();
+            txtStokAdedi = new TextBox();
+            txtUrunAdi = new TextBox();
             label6 = new Label();
             label8 = new Label();
             label11 = new Label();
             panel4 = new Panel();
+            lblKullaniciAdi = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbUrunResmi).BeginInit();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.PaleTurquoise;
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btn_bilgi_guncelle);
+            panel1.Controls.Add(btn_geri_dön);
+            panel1.Controls.Add(lblFiyat);
+            panel1.Controls.Add(lblFiyatSol);
+            panel1.Controls.Add(lblStok);
+            panel1.Controls.Add(lblStokAdediSol);
+            panel1.Controls.Add(cmbUrunSecSol);
+            panel1.Controls.Add(lblUrunSecinizSol);
             panel1.Location = new Point(12, 59);
             panel1.Name = "panel1";
             panel1.Size = new Size(334, 485);
             panel1.TabIndex = 0;
             // 
-            // label5
+            // btn_bilgi_guncelle
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15F);
-            label5.Location = new Point(108, 309);
-            label5.Name = "label5";
-            label5.Size = new Size(40, 35);
-            label5.TabIndex = 5;
-            label5.Text = "TL";
+            btn_bilgi_guncelle.BackColor = Color.Pink;
+            btn_bilgi_guncelle.Location = new Point(137, 406);
+            btn_bilgi_guncelle.Name = "btn_bilgi_guncelle";
+            btn_bilgi_guncelle.Size = new Size(145, 29);
+            btn_bilgi_guncelle.TabIndex = 7;
+            btn_bilgi_guncelle.Text = "verileri güncelle";
+            btn_bilgi_guncelle.UseVisualStyleBackColor = false;
+            btn_bilgi_guncelle.Click += btn_bilgi_guncelle_Click;
             // 
-            // label4
+            // btn_geri_dön
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F);
-            label4.Location = new Point(108, 256);
-            label4.Name = "label4";
-            label4.Size = new Size(154, 35);
-            label4.TabIndex = 4;
-            label4.Text = "ürünün fiyatı";
+            btn_geri_dön.BackColor = Color.Pink;
+            btn_geri_dön.Location = new Point(25, 406);
+            btn_geri_dön.Name = "btn_geri_dön";
+            btn_geri_dön.Size = new Size(91, 29);
+            btn_geri_dön.TabIndex = 6;
+            btn_geri_dön.Text = "geriye dön";
+            btn_geri_dön.UseVisualStyleBackColor = false;
+            btn_geri_dön.Click += btn_geri_dön_Click;
             // 
-            // label3
+            // lblFiyat
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(108, 191);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 35);
-            label3.TabIndex = 3;
-            label3.Text = "stok : ";
+            lblFiyat.AutoSize = true;
+            lblFiyat.Font = new Font("Segoe UI", 15F);
+            lblFiyat.Location = new Point(108, 309);
+            lblFiyat.Name = "lblFiyat";
+            lblFiyat.Size = new Size(40, 35);
+            lblFiyat.TabIndex = 5;
+            lblFiyat.Text = "TL";
             // 
-            // label2
+            // lblFiyatSol
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(108, 134);
-            label2.Name = "label2";
-            label2.Size = new Size(130, 35);
-            label2.TabIndex = 2;
-            label2.Text = "stok adedi";
+            lblFiyatSol.AutoSize = true;
+            lblFiyatSol.Font = new Font("Segoe UI", 15F);
+            lblFiyatSol.Location = new Point(108, 256);
+            lblFiyatSol.Name = "lblFiyatSol";
+            lblFiyatSol.Size = new Size(154, 35);
+            lblFiyatSol.TabIndex = 4;
+            lblFiyatSol.Text = "ürünün fiyatı";
             // 
-            // comboBox1
+            // lblStok
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(96, 77);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(186, 28);
-            comboBox1.TabIndex = 1;
+            lblStok.AutoSize = true;
+            lblStok.Font = new Font("Segoe UI", 15F);
+            lblStok.Location = new Point(108, 191);
+            lblStok.Name = "lblStok";
+            lblStok.Size = new Size(80, 35);
+            lblStok.TabIndex = 3;
+            lblStok.Text = "stok : ";
             // 
-            // label1
+            // lblStokAdediSol
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(108, 16);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 35);
-            label1.TabIndex = 0;
-            label1.Text = "ürünü seçiniz";
+            lblStokAdediSol.AutoSize = true;
+            lblStokAdediSol.Font = new Font("Segoe UI", 15F);
+            lblStokAdediSol.Location = new Point(108, 134);
+            lblStokAdediSol.Name = "lblStokAdediSol";
+            lblStokAdediSol.Size = new Size(130, 35);
+            lblStokAdediSol.TabIndex = 2;
+            lblStokAdediSol.Text = "stok adedi";
             // 
-            // label15
+            // cmbUrunSecSol
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 15F);
-            label15.Location = new Point(83, 4);
-            label15.Name = "label15";
-            label15.Size = new Size(155, 35);
-            label15.TabIndex = 4;
-            label15.Text = "ürün bilgileri";
+            cmbUrunSecSol.FormattingEnabled = true;
+            cmbUrunSecSol.Location = new Point(96, 77);
+            cmbUrunSecSol.Name = "cmbUrunSecSol";
+            cmbUrunSecSol.Size = new Size(186, 28);
+            cmbUrunSecSol.TabIndex = 1;
+            cmbUrunSecSol.SelectedIndexChanged += cmbUrunSecSol_SelectedIndexChanged;
             // 
-            // label16
+            // lblUrunSecinizSol
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 15F);
-            label16.Location = new Point(444, 4);
-            label16.Name = "label16";
-            label16.Size = new Size(201, 35);
-            label16.TabIndex = 5;
-            label16.Text = "ürün güncelleme";
+            lblUrunSecinizSol.AutoSize = true;
+            lblUrunSecinizSol.Font = new Font("Segoe UI", 15F);
+            lblUrunSecinizSol.Location = new Point(108, 16);
+            lblUrunSecinizSol.Name = "lblUrunSecinizSol";
+            lblUrunSecinizSol.Size = new Size(160, 35);
+            lblUrunSecinizSol.TabIndex = 0;
+            lblUrunSecinizSol.Text = "ürünü seçiniz";
+            // 
+            // lblUrunBilgileri
+            // 
+            lblUrunBilgileri.AutoSize = true;
+            lblUrunBilgileri.Font = new Font("Segoe UI", 15F);
+            lblUrunBilgileri.Location = new Point(83, 4);
+            lblUrunBilgileri.Name = "lblUrunBilgileri";
+            lblUrunBilgileri.Size = new Size(155, 35);
+            lblUrunBilgileri.TabIndex = 4;
+            lblUrunBilgileri.Text = "ürün bilgileri";
+            // 
+            // lblUrunGuncelleme
+            // 
+            lblUrunGuncelleme.AutoSize = true;
+            lblUrunGuncelleme.Font = new Font("Segoe UI", 15F);
+            lblUrunGuncelleme.Location = new Point(444, 4);
+            lblUrunGuncelleme.Name = "lblUrunGuncelleme";
+            lblUrunGuncelleme.Size = new Size(201, 35);
+            lblUrunGuncelleme.TabIndex = 5;
+            lblUrunGuncelleme.Text = "ürün güncelleme";
             // 
             // panel3
             // 
             panel3.BackColor = Color.LightGoldenrodYellow;
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(comboBox2);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(button4);
-            panel3.Controls.Add(textBox4);
-            panel3.Controls.Add(textBox5);
-            panel3.Controls.Add(textBox6);
+            panel3.Controls.Add(lblUrunSecinizSag);
+            panel3.Controls.Add(cmbUrunSecSag);
+            panel3.Controls.Add(btnGuncelle);
+            panel3.Controls.Add(pbUrunResmi);
+            panel3.Controls.Add(btnFotografEkle);
+            panel3.Controls.Add(txtUrunFiyat);
+            panel3.Controls.Add(txtStokAdedi);
+            panel3.Controls.Add(txtUrunAdi);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label8);
             panel3.Controls.Add(label11);
@@ -167,70 +195,73 @@
             panel3.Size = new Size(450, 485);
             panel3.TabIndex = 6;
             // 
-            // label12
+            // lblUrunSecinizSag
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 15F);
-            label12.Location = new Point(67, 16);
-            label12.Name = "label12";
-            label12.Size = new Size(160, 35);
-            label12.TabIndex = 13;
-            label12.Text = "ürünü seçiniz";
+            lblUrunSecinizSag.AutoSize = true;
+            lblUrunSecinizSag.Font = new Font("Segoe UI", 15F);
+            lblUrunSecinizSag.Location = new Point(67, 16);
+            lblUrunSecinizSag.Name = "lblUrunSecinizSag";
+            lblUrunSecinizSag.Size = new Size(160, 35);
+            lblUrunSecinizSag.TabIndex = 13;
+            lblUrunSecinizSag.Text = "ürünü seçiniz";
             // 
-            // comboBox2
+            // cmbUrunSecSag
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(67, 68);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(164, 28);
-            comboBox2.TabIndex = 12;
+            cmbUrunSecSag.FormattingEnabled = true;
+            cmbUrunSecSag.Location = new Point(67, 68);
+            cmbUrunSecSag.Name = "cmbUrunSecSag";
+            cmbUrunSecSag.Size = new Size(164, 28);
+            cmbUrunSecSag.TabIndex = 12;
             // 
-            // button3
+            // btnGuncelle
             // 
-            button3.Location = new Point(67, 408);
-            button3.Name = "button3";
-            button3.Size = new Size(164, 51);
-            button3.TabIndex = 11;
-            button3.Text = "güncelleme";
-            button3.UseVisualStyleBackColor = true;
+            btnGuncelle.Location = new Point(67, 408);
+            btnGuncelle.Name = "btnGuncelle";
+            btnGuncelle.Size = new Size(164, 51);
+            btnGuncelle.TabIndex = 11;
+            btnGuncelle.Text = "güncelleme";
+            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
-            // pictureBox2
+            // pbUrunResmi
             // 
-            pictureBox2.Location = new Point(264, 75);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(167, 141);
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
+            pbUrunResmi.Location = new Point(264, 75);
+            pbUrunResmi.Name = "pbUrunResmi";
+            pbUrunResmi.Size = new Size(167, 141);
+            pbUrunResmi.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbUrunResmi.TabIndex = 10;
+            pbUrunResmi.TabStop = false;
             // 
-            // button4
+            // btnFotografEkle
             // 
-            button4.Location = new Point(267, 239);
-            button4.Name = "button4";
-            button4.Size = new Size(164, 79);
-            button4.TabIndex = 9;
-            button4.Text = "fotoğraf ekleyin";
-            button4.UseVisualStyleBackColor = true;
+            btnFotografEkle.Location = new Point(267, 239);
+            btnFotografEkle.Name = "btnFotografEkle";
+            btnFotografEkle.Size = new Size(164, 79);
+            btnFotografEkle.TabIndex = 9;
+            btnFotografEkle.Text = "fotoğraf ekleyin";
+            btnFotografEkle.UseVisualStyleBackColor = true;
+            btnFotografEkle.Click += btnFotografEkle_Click;
             // 
-            // textBox4
+            // txtUrunFiyat
             // 
-            textBox4.Location = new Point(67, 362);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(164, 27);
-            textBox4.TabIndex = 8;
+            txtUrunFiyat.Location = new Point(67, 362);
+            txtUrunFiyat.Name = "txtUrunFiyat";
+            txtUrunFiyat.Size = new Size(164, 27);
+            txtUrunFiyat.TabIndex = 8;
             // 
-            // textBox5
+            // txtStokAdedi
             // 
-            textBox5.Location = new Point(67, 258);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(164, 27);
-            textBox5.TabIndex = 7;
+            txtStokAdedi.Location = new Point(67, 258);
+            txtStokAdedi.Name = "txtStokAdedi";
+            txtStokAdedi.Size = new Size(164, 27);
+            txtStokAdedi.TabIndex = 7;
             // 
-            // textBox6
+            // txtUrunAdi
             // 
-            textBox6.Location = new Point(67, 161);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(164, 27);
-            textBox6.TabIndex = 6;
+            txtUrunAdi.Location = new Point(67, 161);
+            txtUrunAdi.Name = "txtUrunAdi";
+            txtUrunAdi.Size = new Size(164, 27);
+            txtUrunAdi.TabIndex = 6;
             // 
             // label6
             // 
@@ -265,28 +296,39 @@
             // panel4
             // 
             panel4.BackColor = Color.BurlyWood;
-            panel4.Controls.Add(label16);
-            panel4.Controls.Add(label15);
+            panel4.Controls.Add(lblKullaniciAdi);
+            panel4.Controls.Add(lblUrunGuncelleme);
+            panel4.Controls.Add(lblUrunBilgileri);
             panel4.Location = new Point(12, 5);
             panel4.Name = "panel4";
             panel4.Size = new Size(790, 48);
             panel4.TabIndex = 7;
             // 
+            // lblKullaniciAdi
+            // 
+            lblKullaniciAdi.AutoSize = true;
+            lblKullaniciAdi.Location = new Point(303, 16);
+            lblKullaniciAdi.Name = "lblKullaniciAdi";
+            lblKullaniciAdi.Size = new Size(88, 20);
+            lblKullaniciAdi.TabIndex = 6;
+            lblKullaniciAdi.Text = "kullanıcı adı";
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(812, 556);
+            ClientSize = new Size(820, 568);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "Form3";
             Text = "Form3";
+            Load += Form3_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbUrunResmi).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -295,26 +337,29 @@
         #endregion
 
         private Panel panel1;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private ComboBox comboBox1;
-        private Label label1;
-        private Label label15;
-        private Label label16;
+        private Label lblFiyat;
+        private Label lblFiyatSol;
+        private Label lblStok;
+        private Label lblStokAdediSol;
+        private ComboBox cmbUrunSecSol;
+        private Label lblUrunSecinizSol;
+        private Label lblUrunBilgileri;
+        private Label lblUrunGuncelleme;
         private Panel panel3;
-        private Button button3;
-        private PictureBox pictureBox2;
-        private Button button4;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private Button btnGuncelle;
+        private PictureBox pbUrunResmi;
+        private Button btnFotografEkle;
+        private TextBox txtUrunFiyat;
+        private TextBox txtStokAdedi;
+        private TextBox txtUrunAdi;
         private Label label6;
         private Label label8;
         private Label label11;
-        private Label label12;
-        private ComboBox comboBox2;
+        private Label lblUrunSecinizSag;
+        private ComboBox cmbUrunSecSag;
         private Panel panel4;
+        private Button btn_geri_dön;
+        private Button btn_bilgi_guncelle;
+        private Label lblKullaniciAdi;
     }
 }
